@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="36" fill="#231610"/>
+  <rect x="6" y="6" width="228" height="228" rx="31" stroke="#E8731A" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Kannada script: ಅಮ್ಮ ಪೇಸ್ಟ್ರೀಸ್ -->
+  <text x="120" y="42" text-anchor="middle" fill="#E8731A" font-family="sans-serif" font-weight="800" font-size="20" letter-spacing="0.5">ಅಮ್ಮ ಪೇಸ್ಟ್ರೀಸ್</text>
+  <!-- Iconic 'A' with nested 'P' Monogram inspired by Amma Pastries BLR emblem -->
+  <path d="M122 54L66 172C64 176 66 180 70 180C73 180 75 178 77 174L85 156H138L147 176H180L122 54ZM91 143L114 91L132 143H91Z" fill="#E8731A"/>
+  <!-- Extended crossbar & P stem inside A -->
+  <rect x="60" y="143" width="84" height="11" rx="5.5" fill="#E8731A"/>
+  <path d="M96 112H115C123 112 128 116.5 128 123.5C128 130.5 123 135 115 135H106V150H96V112ZM106 120V127H113.5C116.5 127 118.5 125.5 118.5 123.5C118.5 121.5 116.5 120 113.5 120H106Z" fill="#E8731A"/>
+  <!-- English Brand Name -->
+  <text x="120" y="212" text-anchor="middle" fill="#E8731A" font-family="sans-serif" font-weight="900" font-size="18" letter-spacing="1.2">AMMA PASTRIES BLR</text>
+</svg>
