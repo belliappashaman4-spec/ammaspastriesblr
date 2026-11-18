@@ -139,11 +139,14 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-bold text-choco-900">
-                      Phone Number Placeholder
+                      Phone &amp; WhatsApp
                     </p>
-                    <p className="text-xs text-choco-600 mt-0.5">
+                    <a
+                      href={BUSINESS_CONFIG.phoneHref}
+                      className="text-xs sm:text-sm font-semibold text-saffron-600 hover:underline mt-0.5 inline-block"
+                    >
                       {BUSINESS_CONFIG.phoneDisplay}
-                    </p>
+                    </a>
                   </div>
                 </div>
 

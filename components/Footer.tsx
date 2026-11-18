@@ -231,9 +231,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-saffron-400 shrink-0" />
-                <span className="text-xs sm:text-sm">
+                <a
+                  href={BUSINESS_CONFIG.phoneHref}
+                  className="text-xs sm:text-sm hover:text-saffron-400 transition-colors"
+                >
                   {BUSINESS_CONFIG.phoneDisplay}
-                </span>
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-saffron-400 shrink-0" />

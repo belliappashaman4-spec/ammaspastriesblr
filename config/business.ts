@@ -1,10 +1,10 @@
 /**
  * Central Business Configuration for Amma Pastries BLR
- * Edit this single file to update WhatsApp number, contact placeholders,
+ * Edit this single file to update WhatsApp number, contact details,
  * social links, and store details across the entire website.
  */
 
-export const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Editable placeholder: Replace with 10-digit Indian mobile number prefixed with 91 (e.g., "919876543210")
+export const WHATSAPP_NUMBER = "918861459597";
 
 export const BUSINESS_CONFIG = {
   name: "Amma Pastries BLR",
@@ -22,7 +22,7 @@ export const BUSINESS_CONFIG = {
 
   // Central WhatsApp Configuration
   whatsappNumber: WHATSAPP_NUMBER,
-  whatsappDisplay: "+91 XXXXX XXXXX (Editable Placeholder)",
+  whatsappDisplay: "+91 88614 59597",
 
   // Verified Address & Hours from Google Business Profile
   addressLine1: "Ground Floor, JP Complex, 156/35, Hulimangala Main Rd",
@@ -35,9 +35,9 @@ export const BUSINESS_CONFIG = {
   googleMapsLink:
     "https://www.google.com/maps/search/?api=1&query=Amma+Pastries+BLR+Ground+Floor+JP+Complex+156%2F35+Hulimangala+Main+Rd+Vinayaka+Layout+Electronic+City+Bengaluru+Karnataka+560105",
 
-  // Contact Details (Clearly marked as editable placeholders until verified)
-  phoneDisplay: "+91 XXXXX XXXXX (Editable Phone Placeholder)",
-  phoneHref: "tel:+910000000000",
+  // Verified Contact Details
+  phoneDisplay: "+91 88614 59597",
+  phoneHref: "tel:+918861459597",
   email: "hello@ammapastriesblr.in",
 
   // Social Media Links
