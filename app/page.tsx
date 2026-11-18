@@ -158,7 +158,7 @@ export default function HomePage() {
               href="/cakes"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-choco-900 hover:bg-choco-800 text-cream-50 text-xs sm:text-sm font-semibold transition-colors self-start sm:self-auto"
             >
-              <span>Explore All 22+ Creations</span>
+              <span>Explore All 75 Menu Items</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -222,17 +222,17 @@ export default function HomePage() {
               </div>
               <div className="flex flex-wrap items-center gap-3">
                 <Link
-                  href="/cakes?category=Brownies"
+                  href="/cakes?category=Pastries%2C+Doughnuts+%26+Brownies"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-choco-900 hover:bg-choco-800 text-cream-50 text-xs sm:text-sm font-semibold transition-colors"
                 >
-                  <span>Explore Brownies</span>
+                  <span>Brownies, Lava Cake &amp; Doughnuts</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
-                  href="/cakes?category=Desserts"
+                  href="/cakes?category=Bakery+Biscuits+%26+Cookies"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-cream-100 text-choco-900 border border-cream-300 text-xs sm:text-sm font-semibold transition-colors"
                 >
-                  <span>Explore Dessert Jars</span>
+                  <span>Biscuits &amp; Namkeen</span>
                 </Link>
               </div>
             </div>

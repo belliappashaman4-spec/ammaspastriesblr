@@ -19,7 +19,12 @@ import {
 } from "@/lib/whatsapp";
 import { useShop } from "@/lib/cart";
 
-type PriceRangeFilter = "all" | "under-300" | "300-700" | "700-1200" | "above-1200";
+type PriceRangeFilter =
+  | "all"
+  | "under-60"
+  | "60-120"
+  | "350-400"
+  | "above-400";
 type SortOption = "popularity" | "price-asc" | "price-desc" | "name-asc";
 
 function CatalogueContent() {
@@ -70,19 +75,19 @@ function CatalogueContent() {
         return false;
       }
 
-      // Price filter (checks base price or any available size option in range)
-      if (priceFilter === "under-300" && product.price >= 300) return false;
+      // Price filter
+      if (priceFilter === "under-60" && product.price > 60) return false;
       if (
-        priceFilter === "300-700" &&
-        (product.price < 300 || product.price > 700)
+        priceFilter === "60-120" &&
+        (product.price < 60 || product.price > 120)
       )
         return false;
       if (
-        priceFilter === "700-1200" &&
-        (product.price < 700 || product.price > 1200)
+        priceFilter === "350-400" &&
+        (product.price < 350 || product.price > 400)
       )
         return false;
-      if (priceFilter === "above-1200" && product.price <= 1200) return false;
+      if (priceFilter === "above-400" && product.price <= 400) return false;
 
       // Search query filter
       if (searchQuery.trim()) {
@@ -241,11 +246,19 @@ function CatalogueContent() {
                 }
                 className="w-full px-3.5 py-2.5 rounded-2xl bg-cream-50 border border-cream-300 text-xs sm:text-sm font-medium text-choco-800 focus:outline-none focus:border-choco-800"
               >
-                <option value="all">All Prices (₹169 – ₹3,899)</option>
-                <option value="under-300">Under ₹300 (Pastries &amp; Cookies)</option>
-                <option value="300-700">₹300 – ₹700 (500g Cakes &amp; Boxes)</option>
-                <option value="700-1200">₹700 – ₹1,200 (Celebration Cakes)</option>
-                <option value="above-1200">Above ₹1,200 (Designer &amp; Tiered)</option>
+                <option value="all">All Prices (₹20 – ₹450+ / ½ kg)</option>
+                <option value="under-60">
+                  ₹20 – ₹60 (Doughnuts, Buns, Lava Cake &amp; Chips)
+                </option>
+                <option value="60-120">
+                  ₹60 – ₹120 (Dilpasand, Biscuits, Rusks &amp; Mixtures)
+                </option>
+                <option value="350-400">
+                  ₹350 – ₹400 (½ kg Classic, Chocolate &amp; Fruit Cakes)
+                </option>
+                <option value="above-400">
+                  ₹450+ (½ kg Cheesecakes &amp; Dark Chocolate)
+                </option>
               </select>
             </div>
 

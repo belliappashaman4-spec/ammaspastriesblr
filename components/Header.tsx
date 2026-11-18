@@ -23,11 +23,20 @@ import { useShop } from "@/lib/cart";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Cakes", href: "/cakes" },
-  { label: "Pastries", href: "/cakes?category=Pastries" },
-  { label: "Desserts", href: "/cakes?category=Desserts" },
-  { label: "Birthday Cakes", href: "/cakes?category=Birthday+Cakes" },
-  { label: "Custom Cakes", href: "/cakes?category=Designer+Cakes#custom-order" },
+  { label: "Full Menu", href: "/cakes" },
+  { label: "Celebration Cakes", href: "/cakes?category=Birthday+Cakes" },
+  {
+    label: "Cheesecakes",
+    href: "/cakes?category=Cheesecakes+%26+Specialty+Cakes",
+  },
+  {
+    label: "Pastries & Doughnuts",
+    href: "/cakes?category=Pastries%2C+Doughnuts+%26+Brownies",
+  },
+  {
+    label: "Biscuits & Snacks",
+    href: "/cakes?category=Bakery+Biscuits+%26+Cookies",
+  },
   { label: "About Us", href: "/about" },
 ];
 

@@ -162,50 +162,50 @@ export default function Footer() {
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2 text-sm text-cream-200/85">
               <li>
                 <Link
-                  href="/cakes?category=Birthday+Cakes"
-                  className="hover:text-saffron-400 transition-colors"
-                >
-                  Birthday Cakes
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/cakes?category=Chocolate+Cakes"
                   className="hover:text-saffron-400 transition-colors"
                 >
-                  Chocolate Truffle Cakes
+                  Chocolate &amp; Black Forest Cakes
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cakes?category=Black+Forest+Cakes"
+                  href="/cakes?category=Cheesecakes+%26+Specialty+Cakes"
                   className="hover:text-saffron-400 transition-colors"
                 >
-                  Black Forest &amp; White Forest
+                  Cheesecakes &amp; Rasmalai Cakes
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cakes?category=Red+Velvet+Cakes"
+                  href="/cakes?category=Vanilla+%26+Fruit+Cakes"
                   className="hover:text-saffron-400 transition-colors"
                 >
-                  Red Velvet &amp; Butterscotch
+                  Vanilla, Butterscotch &amp; Fruit Cakes
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cakes?category=Photo+Cakes"
+                  href="/cakes?category=Pastries%2C+Doughnuts+%26+Brownies"
                   className="hover:text-saffron-400 transition-colors"
                 >
-                  Photo &amp; Designer Cakes
+                  Lava Cake, Brownies &amp; Doughnuts
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/cakes?category=Pastries"
+                  href="/cakes?category=Cream+Buns+%26+Dilpasand"
                   className="hover:text-saffron-400 transition-colors"
                 >
-                  Pastries, Brownies &amp; Cookies
+                  Dilpasand &amp; Cream Buns
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cakes?category=Bakery+Biscuits+%26+Cookies"
+                  className="hover:text-saffron-400 transition-colors"
+                >
+                  Bakery Biscuits, Rusks &amp; Mixtures
                 </Link>
               </li>
             </ul>

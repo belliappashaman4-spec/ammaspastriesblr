@@ -161,14 +161,14 @@ export default function Hero() {
                     Rich &amp; Indulgent
                   </p>
                   <h2 className="font-serif text-xl font-bold mt-0.5">
-                    Royal Chocolate Truffle Cake
+                    Choco Truffle Cake
                   </h2>
                   <div className="mt-2 flex items-center justify-between">
                     <span className="text-sm font-semibold text-cream-100">
-                      Starting at ₹549
+                      ₹400 / ½ kg
                     </span>
                     <Link
-                      href="/products/royal-chocolate-truffle-cake"
+                      href="/products/choco-truffle-cake"
                       className="text-xs font-semibold px-3 py-1.5 rounded-full bg-cream-50 text-choco-900 hover:bg-gold-300 transition-colors"
                     >
                       View Cake →
@@ -180,41 +180,41 @@ export default function Hero() {
               {/* Secondary Stacked Cards */}
               <div className="col-span-12 sm:col-span-5 flex flex-col gap-4">
                 <Link
-                  href="/cakes?category=Birthday+Cakes"
+                  href="/cakes?category=Cheesecakes+%26+Specialty+Cakes"
                   className="relative flex-1 rounded-3xl overflow-hidden shadow-card border border-cream-300 group min-h-[195px]"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=700&q=85"
-                    alt="Pastel Birthday Drip Cakes"
+                    src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=85"
+                    alt="Cheesecakes and Rasmalai Cakes"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-choco-950/80 via-choco-950/15 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-cream-50">
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-blush-200">
-                      Celebration Specials
+                      ₹400 – ₹450 / ½ kg
                     </span>
                     <p className="font-serif text-lg font-bold">
-                      Birthday &amp; Theme Cakes
+                      Cheesecakes &amp; Rasmalai Cakes
                     </p>
                   </div>
                 </Link>
 
                 <Link
-                  href="/cakes?category=Pastries"
+                  href="/cakes?category=Pastries%2C+Doughnuts+%26+Brownies"
                   className="relative flex-1 rounded-3xl overflow-hidden shadow-card border border-cream-300 group min-h-[195px]"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=85"
-                    alt="Fresh Pastries and Brownies"
+                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85"
+                    alt="Lava Cake, Brownies, Doughnuts & Cream Buns"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-choco-950/80 via-choco-950/15 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-cream-50">
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-gold-300">
-                      Everyday Treats
+                      Starting at ₹20
                     </span>
                     <p className="font-serif text-lg font-bold">
-                      Pastries, Brownies &amp; Jars
+                      Lava Cake, Brownies &amp; Buns
                     </p>
                   </div>
                 </Link>

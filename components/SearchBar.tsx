@@ -9,14 +9,16 @@ import { formatPrice } from "@/lib/utils";
 import { useShop } from "@/lib/cart";
 
 const QUICK_SEARCH_TERMS = [
-  "Chocolate cake",
-  "Birthday cake",
+  "Choco Truffle",
   "Black Forest",
-  "Pastries",
-  "Brownies",
-  "Custom cakes",
-  "Red Velvet",
-  "Photo cake",
+  "Rasmalai Cake",
+  "Cheesecake",
+  "Dilpasand",
+  "Lava Cake",
+  "Brownie",
+  "Doughnut",
+  "Biscuit",
+  "Mixture",
 ];
 
 export default function SearchBar() {
