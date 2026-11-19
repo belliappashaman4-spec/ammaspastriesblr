@@ -67,54 +67,9 @@ function makeGramSizes(
   ];
 }
 
-// Curated food photography by category
-const IMG = {
-  chocoTruffle:
-    "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85",
-  darkChoco:
-    "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=85",
-  blackForest:
-    "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=85",
-  whiteForest:
-    "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=900&q=85",
-  butterscotch:
-    "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=85",
-  redVelvet:
-    "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?auto=format&fit=crop&w=900&q=85",
-  cheesecake:
-    "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=85",
-  fruitCake:
-    "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=85",
-  pastelCake:
-    "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=900&q=85",
-  tierCake:
-    "https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=900&q=85",
-  doughnut:
-    "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=85",
-  brownie:
-    "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85",
-  lavaCake:
-    "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=900&q=85",
-  pastrySlice:
-    "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=85",
-  creamBun:
-    "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85",
-  cookies:
-    "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=85",
-  shortbread:
-    "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=900&q=85",
-  rusk:
-    "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=900&q=85",
-  mixture:
-    "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85",
-  chips:
-    "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=900&q=85",
-  peanuts:
-    "https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=900&q=85",
-};
-
 /**
  * COMPLETE OFFICIAL MENU FOR AMMA PASTRIES BLR (75 PRODUCTS)
+ * Every product uses an authentic, real camera food photograph (zero AI-generated images).
  */
 export const PRODUCTS: Product[] = [
   // ============================================================================
@@ -127,8 +82,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Rich chocolate sponge layered with smooth chocolate truffle ganache. Freshly prepared at Amma Pastries BLR for birthdays and special celebrations.",
-    image: IMG.chocoTruffle,
-    gallery: [IMG.chocoTruffle, IMG.darkChoco],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg/960px-Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg/960px-Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Chocolate_truffle_cake.jpg/960px-Chocolate_truffle_cake.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: true,
@@ -146,8 +105,13 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Classic chocolate sponge layered with whipped cream, cherry filling, and generous chocolate shavings on top.",
-    image: IMG.blackForest,
-    gallery: [IMG.blackForest, IMG.chocoTruffle],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Black_forest_Cake.jpg/960px-Black_forest_Cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Black_forest_Cake.jpg/960px-Black_forest_Cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Black_Forest_gateau.jpg/960px-Black_Forest_gateau.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_Forest_cake_4.jpg/960px-Black_Forest_cake_4.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: true,
@@ -165,8 +129,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Indulgent dark chocolate celebration cake finished with deep cocoa frosting and dark chocolate curls.",
-    image: IMG.darkChoco,
-    gallery: [IMG.darkChoco, IMG.chocoTruffle],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chocolate_cake_iced_with_melted_dark_chocolate.jpg/960px-Chocolate_cake_iced_with_melted_dark_chocolate.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chocolate_cake_iced_with_melted_dark_chocolate.jpg/960px-Chocolate_cake_iced_with_melted_dark_chocolate.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Brown_Chocolate_Cake.jpg/960px-Brown_Chocolate_Cake.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: true,
@@ -184,8 +152,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Moist chocolate cake paired with golden butterscotch cream and crunchy caramel praline.",
-    image: IMG.butterscotch,
-    gallery: [IMG.butterscotch, IMG.chocoTruffle],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Chocolate_Butterscotch_cake.jpg/960px-Chocolate_Butterscotch_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Chocolate_Butterscotch_cake.jpg/960px-Chocolate_Butterscotch_cake.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: false,
@@ -203,8 +174,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Smooth chocolate cream cake topped and layered with roasted almond flakes.",
-    image: IMG.chocoTruffle,
-    gallery: [IMG.chocoTruffle],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Almond_chocolate_cake.jpg/960px-Almond_chocolate_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Almond_chocolate_cake.jpg/960px-Almond_chocolate_cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/IKEA_chocolate_almond_cake.jpg/960px-IKEA_chocolate_almond_cake.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: false,
@@ -222,8 +197,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Rich chocolate celebration cake studded with mixed fruits and crunchy nuts in every slice.",
-    image: IMG.darkChoco,
-    gallery: [IMG.darkChoco],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mocha_almond_fudge_avocado_cake_%284673005762%29.jpg/960px-Mocha_almond_fudge_avocado_cake_%284673005762%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Mocha_almond_fudge_avocado_cake_%284673005762%29.jpg/960px-Mocha_almond_fudge_avocado_cake_%284673005762%29.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: false,
@@ -241,8 +219,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Soft chocolate sponge frosted with rich cream and loaded with crunchy chocolate chips.",
-    image: IMG.chocoTruffle,
-    gallery: [IMG.chocoTruffle],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Chocolate_Truffle_Cake_%285354498813%29.jpg/960px-Chocolate_Truffle_Cake_%285354498813%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Chocolate_Truffle_Cake_%285354498813%29.jpg/960px-Chocolate_Truffle_Cake_%285354498813%29.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: false,
@@ -264,8 +245,13 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Signature Indian fusion celebration cake infused with aromatic cardamom, saffron milk notes, and pistachio garnish.",
-    image: IMG.tierCake,
-    gallery: [IMG.tierCake, IMG.pastelCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg/960px-Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg/960px-Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Rasamalai_Cake.jpg/960px-Rasamalai_Cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/RASMALAI_CHEESE_CAKE.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: true,
@@ -283,8 +269,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Delicate pistachio-flavoured sponge layered with creamy pista frosting and crushed pistachios.",
-    image: IMG.pastelCake,
-    gallery: [IMG.pastelCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pistachio_Cake.jpg/960px-Pistachio_Cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pistachio_Cake.jpg/960px-Pistachio_Cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pistachio_cake_-_Garden_Caf%C3%A9_Brighton_2023-12-30.jpg/960px-Pistachio_cake_-_Garden_Caf%C3%A9_Brighton_2023-12-30.jpg",
+    ],
     price: 400,
     sizes: makeCakeSizes(400),
     isBestseller: false,
@@ -302,8 +292,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Crimson red velvet layers paired with smooth, creamy cheesecake frosting for birthdays and anniversaries.",
-    image: IMG.redVelvet,
-    gallery: [IMG.redVelvet, IMG.cheesecake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Red_Velvet_Cake_Waldorf_Astoria.jpg/960px-Red_Velvet_Cake_Waldorf_Astoria.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Red_Velvet_Cake_Waldorf_Astoria.jpg/960px-Red_Velvet_Cake_Waldorf_Astoria.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Red_velvet_cake_slice.jpg/960px-Red_velvet_cake_slice.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: true,
@@ -321,8 +315,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Creamy cheesecake celebration cake topped with crushed Oreo cookies and chocolate drizzle.",
-    image: IMG.cheesecake,
-    gallery: [IMG.cheesecake, IMG.darkChoco],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cheesecake_Chocolate_Oreo_Desert_at_Chip%27d.jpg/960px-Cheesecake_Chocolate_Oreo_Desert_at_Chip%27d.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cheesecake_Chocolate_Oreo_Desert_at_Chip%27d.jpg/960px-Cheesecake_Chocolate_Oreo_Desert_at_Chip%27d.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Oreo_mini_cheesecake.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: true,
@@ -340,8 +338,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Vibrant pastel rainbow cheesecake crafted to brighten birthdays and kids' celebrations.",
-    image: IMG.pastelCake,
-    gallery: [IMG.pastelCake, IMG.cheesecake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Rainbow_Cake_Cutting.jpg/960px-Rainbow_Cake_Cutting.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Rainbow_Cake_Cutting.jpg/960px-Rainbow_Cake_Cutting.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -358,9 +359,13 @@ export const PRODUCTS: Product[] = [
     category: "Cheesecakes & Specialty Cakes",
     secondaryCategories: ["Birthday Cakes"],
     description:
-      "Amma Pastries BLR specialty Triple Queen layered celebration cake with trio flavour indulgence.",
-    image: IMG.tierCake,
-    gallery: [IMG.tierCake],
+      "Amma Pastries BLR specialty Triple Queen three-layered celebration cake with trio flavour indulgence.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Three-layer_chocolate_and_raspberry_cake.jpg/960px-Three-layer_chocolate_and_raspberry_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Three-layer_chocolate_and_raspberry_cake.jpg/960px-Three-layer_chocolate_and_raspberry_cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Three_layer_gourmet_birthday_cake.jpg/960px-Three_layer_gourmet_birthday_cake.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -378,8 +383,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Smooth, velvety classic cheesecake crafted for cheesecake lovers.",
-    image: IMG.cheesecake,
-    gallery: [IMG.cheesecake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg/960px-Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg/960px-Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -397,8 +405,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Aromatic coffee-infused cheesecake finished with smooth cream and cocoa dusting.",
-    image: IMG.cheesecake,
-    gallery: [IMG.cheesecake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Coffee_walnut_cake_%286886305509%29.jpg/960px-Coffee_walnut_cake_%286886305509%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Coffee_walnut_cake_%286886305509%29.jpg/960px-Coffee_walnut_cake_%286886305509%29.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -415,9 +426,12 @@ export const PRODUCTS: Product[] = [
     category: "Cheesecakes & Specialty Cakes",
     secondaryCategories: ["Birthday Cakes"],
     description:
-      "Showstopper mirror-glaze inspired Galaxy Cheesecake designed for memorable celebrations.",
-    image: IMG.pastelCake,
-    gallery: [IMG.pastelCake],
+      "Showstopper glazed Galaxy Cheesecake designed for memorable celebrations.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Blueberry_cheesecake_from_Pepper_Stone_Bakery.jpg/960px-Blueberry_cheesecake_from_Pepper_Stone_Bakery.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Blueberry_cheesecake_from_Pepper_Stone_Bakery.jpg/960px-Blueberry_cheesecake_from_Pepper_Stone_Bakery.jpg",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -435,8 +449,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Chocolate Cakes", "Birthday Cakes"],
     description:
       "Decadent blend of rich chocolate ganache and creamy cheesecake layers.",
-    image: IMG.darkChoco,
-    gallery: [IMG.darkChoco, IMG.cheesecake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chocolate_cheesecake_with_decoration.jpg/960px-Chocolate_cheesecake_with_decoration.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chocolate_cheesecake_with_decoration.jpg/960px-Chocolate_cheesecake_with_decoration.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/04672_Chocolate_Cheesecake%2C_Sanok.JPG",
+    ],
     price: 450,
     sizes: makeCakeSizes(450),
     isBestseller: false,
@@ -458,8 +476,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Soft vanilla sponge layered with whipped cream, sweet cherries, and snowy white chocolate flakes.",
-    image: IMG.whiteForest,
-    gallery: [IMG.whiteForest],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Black_and_White_Forest.jpg/960px-Black_and_White_Forest.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Black_and_White_Forest.jpg/960px-Black_and_White_Forest.jpg",
+    ],
     price: 350,
     sizes: makeCakeSizes(350),
     isBestseller: true,
@@ -477,8 +498,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Classic vanilla sponge layered with golden butterscotch cream, caramel drizzle, and crunchy praline.",
-    image: IMG.butterscotch,
-    gallery: [IMG.butterscotch],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Butterscotch_cake.jpg/960px-Butterscotch_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Butterscotch_cake.jpg/960px-Butterscotch_cake.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: true,
@@ -496,8 +520,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Light and airy sponge layered with freshly whipped cream and juicy pineapple compote.",
-    image: IMG.fruitCake,
-    gallery: [IMG.fruitCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pineapple_Pastry.JPG/960px-Pineapple_Pastry.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Pineapple_Pastry.JPG/960px-Pineapple_Pastry.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pineapple_cakes.jpg/960px-Pineapple_cakes.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: true,
@@ -515,8 +543,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Smooth vanilla cream sponge generously garnished with toasted almond flakes.",
-    image: IMG.whiteForest,
-    gallery: [IMG.whiteForest],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Damp_lemon_and_almond_cake.jpg/960px-Damp_lemon_and_almond_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Damp_lemon_and_almond_cake.jpg/960px-Damp_lemon_and_almond_cake.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: false,
@@ -534,8 +565,11 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Soft vanilla sponge layered with berry cream and glossy blueberry compote.",
-    image: IMG.pastelCake,
-    gallery: [IMG.pastelCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blueberry_cheesecake_at_the_Queen_of_Tarts_Cafe.jpg/960px-Blueberry_cheesecake_at_the_Queen_of_Tarts_Cafe.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blueberry_cheesecake_at_the_Queen_of_Tarts_Cafe.jpg/960px-Blueberry_cheesecake_at_the_Queen_of_Tarts_Cafe.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: false,
@@ -553,8 +587,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Pretty pink strawberry cream cake with sweet strawberry crush layers.",
-    image: IMG.pastelCake,
-    gallery: [IMG.pastelCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Strawberry_Cake.JPG/960px-Strawberry_Cake.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Strawberry_Cake.JPG/960px-Strawberry_Cake.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Strawberry_cake%2C_Ehrenbach.jpg/960px-Strawberry_cake%2C_Ehrenbach.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: false,
@@ -572,8 +610,12 @@ export const PRODUCTS: Product[] = [
     secondaryCategories: ["Birthday Cakes"],
     description:
       "Tropical mango glaze and mango cream layered over soft vanilla sponge.",
-    image: IMG.fruitCake,
-    gallery: [IMG.fruitCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Peach_Mango_Symphony_%28Red_Ribbon%29_-_Mango_cake_%28Philippines%29.jpg/960px-Peach_Mango_Symphony_%28Red_Ribbon%29_-_Mango_cake_%28Philippines%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Peach_Mango_Symphony_%28Red_Ribbon%29_-_Mango_cake_%28Philippines%29.jpg/960px-Peach_Mango_Symphony_%28Red_Ribbon%29_-_Mango_cake_%28Philippines%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mango_Passion_cake_%28Red_Ribbon%2C_Philippines%29.jpg/960px-Mango_Passion_cake_%28Red_Ribbon%2C_Philippines%29.jpg",
+    ],
     price: 380,
     sizes: makeCakeSizes(380),
     isBestseller: false,
@@ -594,8 +636,12 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Warm chocolate lava cake with a rich, molten chocolate centre.",
-    image: IMG.lavaCake,
-    gallery: [IMG.lavaCake],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chocolate_lava_cake.jpg/960px-Chocolate_lava_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chocolate_lava_cake.jpg/960px-Chocolate_lava_cake.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vegan_Flourless_Swiss_Chocolate_Molten_Lava_Cake_%284865230786%29.jpg/960px-Vegan_Flourless_Swiss_Chocolate_Molten_Lava_Cake_%284865230786%29.jpg",
+    ],
     price: 50,
     sizes: makePieceSizes(50),
     isBestseller: true,
@@ -612,8 +658,12 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Fudgy chocolate brownie square baked fresh with deep cocoa richness.",
-    image: IMG.brownie,
-    gallery: [IMG.brownie],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Chocolate_brownies_without_table.jpg/960px-Chocolate_brownies_without_table.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Chocolate_brownies_without_table.jpg/960px-Chocolate_brownies_without_table.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Brownie_Crust.jpg/960px-Brownie_Crust.jpg",
+    ],
     price: 50,
     sizes: makePieceSizes(50),
     isBestseller: true,
@@ -630,8 +680,12 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Soft, fluffy bakery doughnut dipped in glossy chocolate glaze.",
-    image: IMG.doughnut,
-    gallery: [IMG.doughnut],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Chocolate-glazed_doughnut_%281236451%29.jpg/960px-Chocolate-glazed_doughnut_%281236451%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Chocolate-glazed_doughnut_%281236451%29.jpg/960px-Chocolate-glazed_doughnut_%281236451%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Chocolate-glazed_doughnut_with_sprinkles_%287429937320%29.jpg/960px-Chocolate-glazed_doughnut_with_sprinkles_%287429937320%29.jpg",
+    ],
     price: 40,
     sizes: makePieceSizes(40),
     isBestseller: true,
@@ -648,8 +702,11 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Bite-sized glazed mini doughnut—ideal for kids and quick sweet cravings.",
-    image: IMG.doughnut,
-    gallery: [IMG.doughnut],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mini_Donuts_-_panoramio.jpg/960px-Mini_Donuts_-_panoramio.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mini_Donuts_-_panoramio.jpg/960px-Mini_Donuts_-_panoramio.jpg",
+    ],
     price: 20,
     sizes: makePieceSizes(20),
     isBestseller: false,
@@ -666,8 +723,11 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Classic bakery-style vanilla butter cream cake slice.",
-    image: IMG.pastrySlice,
-    gallery: [IMG.pastrySlice],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30, "1 Slice"),
     isBestseller: false,
@@ -684,8 +744,11 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Nostalgic chocolate butter cream cake slice topped with smooth cocoa frosting.",
-    image: IMG.pastrySlice,
-    gallery: [IMG.pastrySlice],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Vegan_Mocha_Almond_Fudge_Avocado_Cake_%284673005754%29.jpg/960px-Vegan_Mocha_Almond_Fudge_Avocado_Cake_%284673005754%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Vegan_Mocha_Almond_Fudge_Avocado_Cake_%284673005754%29.jpg/960px-Vegan_Mocha_Almond_Fudge_Avocado_Cake_%284673005754%29.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30, "1 Slice"),
     isBestseller: false,
@@ -702,8 +765,11 @@ export const PRODUCTS: Product[] = [
     category: "Pastries, Doughnuts & Brownies",
     description:
       "Chocolate butter cream cake slice topped with mixed fruit and nut bits.",
-    image: IMG.pastrySlice,
-    gallery: [IMG.pastrySlice],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/TortaPompadour.jpg/960px-TortaPompadour.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/TortaPompadour.jpg/960px-TortaPompadour.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30, "1 Slice"),
     isBestseller: false,
@@ -724,8 +790,11 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Iconic Bengaluru bakery special—flaky golden pastry filled with sweetened coconut, tutti-frutti, and dry fruits.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Danish_pastry.JPG/960px-Danish_pastry.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Danish_pastry.JPG/960px-Danish_pastry.JPG",
+    ],
     price: 100,
     sizes: [
       { label: "1 Piece (Full Round)", price: 100, servings: "Shares 3–4" },
@@ -745,8 +814,12 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Pillow-soft bakery bun generously filled with smooth vanilla cream.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Bun-Maska.jpg/960px-Bun-Maska.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Bun-Maska.jpg/960px-Bun-Maska.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Cream_bread_2.jpg/960px-Cream_bread_2.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30),
     isBestseller: false,
@@ -763,8 +836,11 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Freshly baked soft bun filled with rich chocolate cream.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bun-Bar-Line-Split.jpg/960px-Bun-Bar-Line-Split.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bun-Bar-Line-Split.jpg/960px-Bun-Bar-Line-Split.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30),
     isBestseller: false,
@@ -781,8 +857,11 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Soft bakery bun filled with fruity blueberry cream.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cream_filled_bun_of_Shimizuya.jpg/960px-Cream_filled_bun_of_Shimizuya.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cream_filled_bun_of_Shimizuya.jpg/960px-Cream_filled_bun_of_Shimizuya.jpg",
+    ],
     price: 30,
     sizes: makePieceSizes(30),
     isBestseller: false,
@@ -799,8 +878,11 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Soft chocolate-filled bakery bun freshly baked every day.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chocolate_dirty_pastry_buns.jpg/960px-Chocolate_dirty_pastry_buns.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chocolate_dirty_pastry_buns.jpg/960px-Chocolate_dirty_pastry_buns.jpg",
+    ],
     price: 40,
     sizes: makePieceSizes(40),
     isBestseller: false,
@@ -817,8 +899,11 @@ export const PRODUCTS: Product[] = [
     category: "Cream Buns & Dilpasand",
     description:
       "Classic bakery jam bun filled with sweet mixed fruit jam.",
-    image: IMG.creamBun,
-    gallery: [IMG.creamBun],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bean-jam-bun%2Canpan%2Ckatori-city%2Cjapan.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bean-jam-bun%2Canpan%2Ckatori-city%2Cjapan.JPG",
+    ],
     price: 30,
     sizes: makePieceSizes(30),
     isBestseller: false,
@@ -839,8 +924,12 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Crisp, golden bakery biscuits studded with roasted cashew bits.",
-    image: IMG.cookies,
-    gallery: [IMG.cookies],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: true,
@@ -857,8 +946,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Traditional Karnataka spiced savoury khara biscuits—aromatic with curry leaves, chillies, and spices.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Salt_%26_Pepper_%28UNNG-BBG-8%29_2.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/Salt_%26_Pepper_%28UNNG-BBG-8%29_2.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: true,
@@ -875,8 +967,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Wholesome finger-millet (ragi) bakery biscuits with a crisp, nutty crunch.",
-    image: IMG.cookies,
-    gallery: [IMG.cookies],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Ragi_Chocolate_Cookies.jpg/960px-Ragi_Chocolate_Cookies.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Ragi_Chocolate_Cookies.jpg/960px-Ragi_Chocolate_Cookies.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -893,8 +988,12 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Crunchy cocoa bakery biscuits baked for chocolate lovers.",
-    image: IMG.cookies,
-    gallery: [IMG.cookies],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Chocolate_cookie.jpg/960px-Chocolate_cookie.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Chocolate_cookie.jpg/960px-Chocolate_cookie.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/6cookies.JPG/960px-6cookies.JPG",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -911,8 +1010,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Crisp bakery biscuits baked with roasted desiccated coconut.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coconut_Cookies_%284802354676%29.jpg/960px-Coconut_Cookies_%284802354676%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coconut_Cookies_%284802354676%29.jpg/960px-Coconut_Cookies_%284802354676%29.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -929,8 +1031,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Aromatic biscuits crafted with freshly grated coconut for a rich tropical crunch.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Coconut_Cookies.jpg/960px-Coconut_Cookies.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Coconut_Cookies.jpg/960px-Coconut_Cookies.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -947,8 +1052,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Light, flaky salted tea-time bakery biscuits.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Salted_Biscuits_-_Kolkata_2011-11-17_7129.JPG/960px-Salted_Biscuits_-_Kolkata_2011-11-17_7129.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Salted_Biscuits_-_Kolkata_2011-11-17_7129.JPG/960px-Salted_Biscuits_-_Kolkata_2011-11-17_7129.JPG",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -965,8 +1073,12 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Melt-in-the-mouth golden butter biscuits baked fresh at Amma Pastries BLR.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Nankhatai.jpg/960px-Nankhatai.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Nankhatai.jpg/960px-Nankhatai.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9b/Nankhatai_biscuits.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -983,8 +1095,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Classic sweet milk bakery biscuits—ideal with evening tea or coffee.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Nankhatais.jpg/960px-Nankhatais.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Nankhatais.jpg/960px-Nankhatais.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -1001,8 +1116,11 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Bite-sized cashew butter biscuits baked to a golden crunch.",
-    image: IMG.cookies,
-    gallery: [IMG.cookies],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg/960px-Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg/960px-Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -1019,8 +1137,12 @@ export const PRODUCTS: Product[] = [
     category: "Bakery Biscuits & Cookies",
     description:
       "Crisp bakery shortbread biscuits topped with toasted almond slices.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Almond_Biscuit_Bakery.JPG/960px-Almond_Biscuit_Bakery.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Almond_Biscuit_Bakery.JPG/960px-Almond_Biscuit_Bakery.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Almond_cookies_%2842274624115%29.jpg/960px-Almond_cookies_%2842274624115%29.jpg",
+    ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
     isBestseller: false,
@@ -1041,8 +1163,11 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Twice-baked crispy special milk rusks crafted for dipping into hot filter coffee or masala chai.",
-    image: IMG.rusk,
-    gallery: [IMG.rusk],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rusk_from_India.jpg/960px-Rusk_from_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rusk_from_India.jpg/960px-Rusk_from_India.jpg",
+    ],
     price: 100,
     sizes: makeGramSizes(100, "250 g"),
     isBestseller: true,
@@ -1059,8 +1184,11 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Crunchy golden stick rusks freshly baked in our ovens.",
-    image: IMG.rusk,
-    gallery: [IMG.rusk],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Zwieback-1.jpg/960px-Zwieback-1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Zwieback-1.jpg/960px-Zwieback-1.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "250 g"),
     isBestseller: false,
@@ -1077,8 +1205,12 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Special oven-baked Nippattu prepared without oil frying—crispy, spiced, and guilt-free.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nippattu_%28Rice_crackers%29.jpg/960px-Nippattu_%28Rice_crackers%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nippattu_%28Rice_crackers%29.jpg/960px-Nippattu_%28Rice_crackers%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Nippattu_%28Rice_crackers%29_2.jpg/960px-Nippattu_%28Rice_crackers%29_2.jpg",
+    ],
     price: 100,
     sizes: makeGramSizes(100, "250 g"),
     isBestseller: true,
@@ -1095,8 +1227,11 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Flaky, crispy bakery Bombe Kaari (khari puff biscuits) perfect with hot tea.",
-    image: IMG.rusk,
-    gallery: [IMG.rusk],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Palmiers_from_Zhongguancun_Pastry_%2820221019155059%29.jpg/960px-Palmiers_from_Zhongguancun_Pastry_%2820221019155059%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Palmiers_from_Zhongguancun_Pastry_%2820221019155059%29.jpg/960px-Palmiers_from_Zhongguancun_Pastry_%2820221019155059%29.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "250 g"),
     isBestseller: false,
@@ -1113,8 +1248,11 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Crunchy diamond-cut traditional sweet Shankarpalya (Shankarpali) snacks.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Shankarpali_sweets_mithai_Western_India_2012.jpg/960px-Shankarpali_sweets_mithai_Western_India_2012.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Shankarpali_sweets_mithai_Western_India_2012.jpg/960px-Shankarpali_sweets_mithai_Western_India_2012.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1131,8 +1269,12 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Traditional crunchy jaggery and roasted peanut Chikki rounds.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Peanut_chikki%2C_a_popular_foodstuff_of_jaggery_and_peanut_is_available_commercially_all_over_India.jpg/960px-Peanut_chikki%2C_a_popular_foodstuff_of_jaggery_and_peanut_is_available_commercially_all_over_India.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Peanut_chikki%2C_a_popular_foodstuff_of_jaggery_and_peanut_is_available_commercially_all_over_India.jpg/960px-Peanut_chikki%2C_a_popular_foodstuff_of_jaggery_and_peanut_is_available_commercially_all_over_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Peanut_Chikki.JPG/960px-Peanut_Chikki.JPG",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1149,8 +1291,11 @@ export const PRODUCTS: Product[] = [
     category: "Rusks & Traditional Bakes",
     description:
       "Traditional black sesame (ellu) sweet crunch pack.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Black_sesame_Malipot_Albay_Pilinut_CandyB.jpg/960px-Black_sesame_Malipot_Albay_Pilinut_CandyB.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Black_sesame_Malipot_Albay_Pilinut_CandyB.jpg/960px-Black_sesame_Malipot_Albay_Pilinut_CandyB.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1166,9 +1311,13 @@ export const PRODUCTS: Product[] = [
     name: "White Sesame",
     category: "Rusks & Traditional Bakes",
     description:
-      "Crisp white sesame seed sweet snack pack.",
-    image: IMG.shortbread,
-    gallery: [IMG.shortbread],
+      "Crisp white sesame seed sweet Chikki pack.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Till_Chikki.JPG/960px-Till_Chikki.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Till_Chikki.JPG/960px-Till_Chikki.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tilkut_~_Sweet_savoury_made_from_jaggery_paste_and_sesame_seeds.jpg/960px-Tilkut_~_Sweet_savoury_made_from_jaggery_paste_and_sesame_seeds.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1189,8 +1338,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Crunchy gram-flour sev mixture tossed with roasted peanuts, curry leaves, and mild spices.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SevMamra.jpg/960px-SevMamra.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SevMamra.jpg/960px-SevMamra.jpg",
+    ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
     isBestseller: false,
@@ -1207,8 +1359,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Zesty, aromatic garlic-flavoured Karnataka savoury mixture.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bhuja_mix_in_preperation.jpg/960px-Bhuja_mix_in_preperation.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bhuja_mix_in_preperation.jpg/960px-Bhuja_mix_in_preperation.jpg",
+    ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
     isBestseller: false,
@@ -1225,8 +1380,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Classic Bombay/Bombe style crunchy savoury mixture.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bombaymix.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bombaymix.jpg",
+    ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
     isBestseller: false,
@@ -1243,8 +1401,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Crisp spiced kara boondi mixed with roasted peanuts and curry leaves.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Boondi_2.jpg/960px-Boondi_2.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Boondi_2.jpg/960px-Boondi_2.jpg",
+    ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
     isBestseller: false,
@@ -1261,8 +1422,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Chunky special mixture with thick sev, avalakki, peanuts, and roasted gram.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG/960px-Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG/960px-Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG",
+    ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
     isBestseller: false,
@@ -1279,8 +1443,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Light and extra-crispy seasoned corn flakes namkeen mix.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Corn_Flakes_Mixture.JPG/960px-Corn_Flakes_Mixture.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Corn_Flakes_Mixture.JPG/960px-Corn_Flakes_Mixture.JPG",
+    ],
     price: 60,
     sizes: makeGramSizes(60, "150 g"),
     isBestseller: false,
@@ -1297,8 +1464,12 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Crispy traditional Karnataka round rice crackers spiced with peanuts, sesame, and curry leaves.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nippat.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nippat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nippattu_%28Rice_crackers%29_3.jpg/960px-Nippattu_%28Rice_crackers%29_3.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1315,8 +1486,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Lightly salted, golden-roasted crispy moong dal snack pack.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Dal_Moong_Nimko.JPG/960px-Dal_Moong_Nimko.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Dal_Moong_Nimko.JPG/960px-Dal_Moong_Nimko.JPG",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1333,8 +1507,11 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Crispy fried moong dal tossed in a zesty chilli-spice masala.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dal_Moong_Nimko_For_Frying.JPG/960px-Dal_Moong_Nimko_For_Frying.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dal_Moong_Nimko_For_Frying.JPG/960px-Dal_Moong_Nimko_For_Frying.JPG",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1351,8 +1528,12 @@ export const PRODUCTS: Product[] = [
     category: "Mixtures & Savoury Namkeen",
     description:
       "Crunchy spiced masala rings—a popular evening snack for all ages.",
-    image: IMG.mixture,
-    gallery: [IMG.mixture],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/A_Traditional_Tamil_Snack_Murukku.jpg/960px-A_Traditional_Tamil_Snack_Murukku.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/A_Traditional_Tamil_Snack_Murukku.jpg/960px-A_Traditional_Tamil_Snack_Murukku.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Benne_Mucchore.jpg/960px-Benne_Mucchore.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1373,8 +1554,11 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Thinly sliced, kettle-crisp bakery potato chips tossed in spicy chilli seasoning.",
-    image: IMG.chips,
-    gallery: [IMG.chips],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/A_pile_of_All_Dressed_potato_chips_on_a_paper_towel.jpg/960px-A_pile_of_All_Dressed_potato_chips_on_a_paper_towel.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/A_pile_of_All_Dressed_potato_chips_on_a_paper_towel.jpg/960px-A_pile_of_All_Dressed_potato_chips_on_a_paper_towel.jpg",
+    ],
     price: 50,
     sizes: makePieceSizes(50, "1 Pack"),
     isBestseller: true,
@@ -1391,8 +1575,12 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Classic golden, crispy salted bakery potato wafers.",
-    image: IMG.chips,
-    gallery: [IMG.chips],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Potato-Chips.jpg/960px-Potato-Chips.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Potato-Chips.jpg/960px-Potato-Chips.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/073_Potato_chips%2C_Sanok.JPG",
+    ],
     price: 50,
     sizes: makePieceSizes(50, "1 Pack"),
     isBestseller: false,
@@ -1409,8 +1597,12 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Crisp, golden thinly sliced raw banana chips lightly seasoned with salt.",
-    image: IMG.chips,
-    gallery: [IMG.chips],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kerala_banana_chips_Upperi_varuthath.jpg/960px-Kerala_banana_chips_Upperi_varuthath.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kerala_banana_chips_Upperi_varuthath.jpg/960px-Kerala_banana_chips_Upperi_varuthath.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Homemade_4_Cut_Banana_Chips.jpg/960px-Homemade_4_Cut_Banana_Chips.jpg",
+    ],
     price: 100,
     sizes: makeGramSizes(100, "200 g"),
     isBestseller: false,
@@ -1427,8 +1619,12 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Crunchy spiced tapioca (maravalli kizhangu) wafer chips.",
-    image: IMG.chips,
-    gallery: [IMG.chips],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tapioca_Chips.jpg/960px-Tapioca_Chips.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tapioca_Chips.jpg/960px-Tapioca_Chips.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Spicy_and_Non_Spicy_Tapioca_Chips.jpeg/960px-Spicy_and_Non_Spicy_Tapioca_Chips.jpeg",
+    ],
     price: 60,
     sizes: makeGramSizes(60, "150 g"),
     isBestseller: false,
@@ -1445,8 +1641,11 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Famous Bengaluru-style split roasted peanuts tossed with hing, curry leaves, turmeric, and chilli spice.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Congress_Kadlekai.jpg/960px-Congress_Kadlekai.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Congress_Kadlekai.jpg/960px-Congress_Kadlekai.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: true,
@@ -1463,8 +1662,11 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Iconic Karnataka Chintamani-style crunchy roasted spiced peanuts.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Spicy_peanut1.jpg/960px-Spicy_peanut1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Spicy_peanut1.jpg/960px-Spicy_peanut1.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1481,8 +1683,11 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Crunchy gram-flour coated spicy masala peanuts.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Box_with_savories_and_sweets_on_a_plain_background.jpg/960px-Box_with_savories_and_sweets_on_a_plain_background.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Box_with_savories_and_sweets_on_a_plain_background.jpg/960px-Box_with_savories_and_sweets_on_a_plain_background.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1499,8 +1704,12 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Crunchy spiced roasted chana (hurigadale) snack pack.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roasted_Chickpea_Chana_with_Salt_and_Turmeric.jpg/960px-Roasted_Chickpea_Chana_with_Salt_and_Turmeric.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roasted_Chickpea_Chana_with_Salt_and_Turmeric.jpg/960px-Roasted_Chickpea_Chana_with_Salt_and_Turmeric.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Roasted_Chana.JPG/960px-Roasted_Chana.JPG",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,
@@ -1517,8 +1726,11 @@ export const PRODUCTS: Product[] = [
     category: "Chips & Roasted Peanuts",
     description:
       "Crisp fried and seasoned Kabuli chickpeas tossed in tangy masala.",
-    image: IMG.peanuts,
-    gallery: [IMG.peanuts],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Restaurant_style_Crunchy_Chickpeas_or_Chana_Chilli_-_Gujarat_-_SHAILI_007.jpg/960px-Restaurant_style_Crunchy_Chickpeas_or_Chana_Chilli_-_Gujarat_-_SHAILI_007.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Restaurant_style_Crunchy_Chickpeas_or_Chana_Chilli_-_Gujarat_-_SHAILI_007.jpg/960px-Restaurant_style_Crunchy_Chickpeas_or_Chana_Chilli_-_Gujarat_-_SHAILI_007.jpg",
+    ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
     isBestseller: false,

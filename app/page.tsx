@@ -91,28 +91,28 @@ const SAMPLE_TESTIMONIALS = [
 
 const INSTAGRAM_GALLERY = [
   {
-    url: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80",
-    caption: "Glossy dark chocolate truffle swirls ✨",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg/960px-Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg",
+    caption: "Rich Choco Truffle Cake freshly frosted ✨",
   },
   {
-    url: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=600&q=80",
-    caption: "Pastel birthday drip cake crafted for a sweet milestone 🎂",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg/960px-Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg",
+    caption: "Signature Rasmalai Cake with pistachio garnish 🎂",
   },
   {
-    url: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80",
-    caption: "Classic Black Forest gateau topped with cherries 🍒",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Black_forest_Cake.jpg/960px-Black_forest_Cake.jpg",
+    caption: "Classic Black Forest Cake topped with cherries 🍒",
   },
   {
-    url: "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?auto=format&fit=crop&w=600&q=80",
-    caption: "Velvety crimson Red Velvet layers ❤️",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Red_Velvet_Cake_Waldorf_Astoria.jpg/960px-Red_Velvet_Cake_Waldorf_Astoria.jpg",
+    caption: "Crimson Red Velvet Cheesecake layers ❤️",
   },
   {
-    url: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80",
-    caption: "Warm crinkle-top walnut chocolate brownies 🍫",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG",
+    caption: "Freshly baked Cashew & Butter Biscuits 🍪",
   },
   {
-    url: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80",
-    caption: "Layered dessert jars & patisserie slices 🥄",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nippattu_%28Rice_crackers%29.jpg/960px-Nippattu_%28Rice_crackers%29.jpg",
+    caption: "Crispy Karnataka Nippattu & Congress Kadlekai 🥜",
   },
 ];
 

@@ -146,8 +146,8 @@ export default function Hero() {
               {/* Primary Hero Cake Card */}
               <div className="col-span-12 sm:col-span-7 relative rounded-3xl overflow-hidden shadow-elevated border border-cream-300 bg-choco-900 group min-h-[320px] sm:min-h-[420px]">
                 <img
-                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
-                  alt="Signature Chocolate Truffle Celebration Cake at Amma Pastries"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg/960px-Rich_Chocolate_Truffle_Cake_by_Ramesh_Bakery_in_Bhopal_Madhya_Pradesh.jpg"
+                  alt="Signature Choco Truffle Celebration Cake at Amma Pastries BLR"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-choco-950/85 via-choco-950/20 to-transparent" />
@@ -184,7 +184,7 @@ export default function Hero() {
                   className="relative flex-1 rounded-3xl overflow-hidden shadow-card border border-cream-300 group min-h-[195px]"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=85"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg/960px-Rasmalai_Cake_with_Pistachio_Garnish_and_Rasmalai_on_it.jpg"
                     alt="Cheesecakes and Rasmalai Cakes"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -204,7 +204,7 @@ export default function Hero() {
                   className="relative flex-1 rounded-3xl overflow-hidden shadow-card border border-cream-300 group min-h-[195px]"
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chocolate_lava_cake.jpg/960px-Chocolate_lava_cake.jpg"
                     alt="Lava Cake, Brownies, Doughnuts & Cream Buns"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
