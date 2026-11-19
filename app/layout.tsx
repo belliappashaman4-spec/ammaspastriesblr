@@ -49,7 +49,7 @@ export default function RootLayout({
     alternateName: BUSINESS_CONFIG.kannadaName,
     description: BUSINESS_CONFIG.subheadline,
     url: BUSINESS_CONFIG.websiteUrl,
-    telephone: "+91-8861459597",
+    telephone: "+91-9686774372",
     address: {
       "@type": "PostalAddress",
       streetAddress:

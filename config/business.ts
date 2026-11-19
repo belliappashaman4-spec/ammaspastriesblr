@@ -4,7 +4,7 @@
  * social links, and store details across the entire website.
  */
 
-export const WHATSAPP_NUMBER = "918861459597";
+export const WHATSAPP_NUMBER = "919686774372";
 
 export const BUSINESS_CONFIG = {
   name: "Amma Pastries BLR",
@@ -22,7 +22,7 @@ export const BUSINESS_CONFIG = {
 
   // Central WhatsApp Configuration
   whatsappNumber: WHATSAPP_NUMBER,
-  whatsappDisplay: "+91 88614 59597",
+  whatsappDisplay: "+91 96867 74372",
 
   // Verified Address & Hours from Google Business Profile
   addressLine1: "Ground Floor, JP Complex, 156/35, Hulimangala Main Rd",
@@ -36,8 +36,8 @@ export const BUSINESS_CONFIG = {
     "https://www.google.com/maps/search/?api=1&query=Amma+Pastries+BLR+Ground+Floor+JP+Complex+156%2F35+Hulimangala+Main+Rd+Vinayaka+Layout+Electronic+City+Bengaluru+Karnataka+560105",
 
   // Verified Contact Details
-  phoneDisplay: "+91 88614 59597",
-  phoneHref: "tel:+918861459597",
+  phoneDisplay: "+91 96867 74372",
+  phoneHref: "tel:+919686774372",
   email: "hello@ammapastriesblr.in",
 
   // Social Media Links
