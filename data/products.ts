@@ -384,9 +384,10 @@ export const PRODUCTS: Product[] = [
     description:
       "Smooth, velvety classic cheesecake crafted for cheesecake lovers.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg/960px-Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baked_New_York_Cheesecake%2C_The_Griffins_Hotel%2C_2024_%2801%29.jpg/960px-Baked_New_York_Cheesecake%2C_The_Griffins_Hotel%2C_2024_%2801%29.jpg",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg/960px-Cheesecake_Lady_-_November_2023_-_Sarah_Stierch_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baked_New_York_Cheesecake%2C_The_Griffins_Hotel%2C_2024_%2801%29.jpg/960px-Baked_New_York_Cheesecake%2C_The_Griffins_Hotel%2C_2024_%2801%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Home_Made_Cheesecake.jpg/960px-Home_Made_Cheesecake.jpg",
     ],
     price: 450,
     sizes: makeCakeSizes(450),
@@ -858,9 +859,10 @@ export const PRODUCTS: Product[] = [
     description:
       "Soft bakery bun filled with fruity blueberry cream.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cream_filled_bun_of_Shimizuya.jpg/960px-Cream_filled_bun_of_Shimizuya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Maritozzo_con_panna.jpg/960px-Maritozzo_con_panna.jpg",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cream_filled_bun_of_Shimizuya.jpg/960px-Cream_filled_bun_of_Shimizuya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Maritozzo_con_panna.jpg/960px-Maritozzo_con_panna.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Freshly_baked_Roman_maritozzo.jpg/960px-Freshly_baked_Roman_maritozzo.jpg",
     ],
     price: 30,
     sizes: makePieceSizes(30),
@@ -1011,9 +1013,9 @@ export const PRODUCTS: Product[] = [
     description:
       "Crisp bakery biscuits baked with roasted desiccated coconut.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coconut_Cookies_%284802354676%29.jpg/960px-Coconut_Cookies_%284802354676%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Coconut_cookies-.jpg/960px-Coconut_cookies-.jpg",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coconut_Cookies_%284802354676%29.jpg/960px-Coconut_Cookies_%284802354676%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Coconut_cookies-.jpg/960px-Coconut_cookies-.jpg",
     ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
@@ -1117,9 +1119,9 @@ export const PRODUCTS: Product[] = [
     description:
       "Bite-sized cashew butter biscuits baked to a golden crunch.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg/960px-Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg/960px-Gedono_%22Trappist%22_Cookies%2C_vanilla_flavor_with_cashew_nuts.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3613.JPG",
     ],
     price: 110,
     sizes: makeGramSizes(110, "250 g"),
@@ -1423,9 +1425,9 @@ export const PRODUCTS: Product[] = [
     description:
       "Chunky special mixture with thick sev, avalakki, peanuts, and roasted gram.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG/960px-Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Mixture_%28the_Indian_snack%29_in_Chennai.JPG/960px-Mixture_%28the_Indian_snack%29_in_Chennai.JPG",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG/960px-Hot_Bombay_Mix_Vendor_-_Kolkata_2013-10-11_3301.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Mixture_%28the_Indian_snack%29_in_Chennai.JPG/960px-Mixture_%28the_Indian_snack%29_in_Chennai.JPG",
     ],
     price: 90,
     sizes: makeGramSizes(90, "250 g"),
@@ -1684,9 +1686,9 @@ export const PRODUCTS: Product[] = [
     description:
       "Crunchy gram-flour coated spicy masala peanuts.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Box_with_savories_and_sweets_on_a_plain_background.jpg/960px-Box_with_savories_and_sweets_on_a_plain_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Fried_Masala_Ground_Nut.jpg/960px-Fried_Masala_Ground_Nut.jpg",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Box_with_savories_and_sweets_on_a_plain_background.jpg/960px-Box_with_savories_and_sweets_on_a_plain_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Fried_Masala_Ground_Nut.jpg/960px-Fried_Masala_Ground_Nut.jpg",
     ],
     price: 80,
     sizes: makeGramSizes(80, "200 g"),
