@@ -13,12 +13,13 @@ const QUICK_SEARCH_TERMS = [
   "Black Forest",
   "Rasmalai Cake",
   "Cheesecake",
+  "Veg Puff",
+  "Egg Puff",
+  "Ghee Cake",
+  "Plum Cake",
+  "Murukku",
   "Dilpasand",
-  "Lava Cake",
-  "Brownie",
-  "Doughnut",
-  "Biscuit",
-  "Mixture",
+  "Rose Cookies",
 ];
 
 export default function SearchBar() {

@@ -30,12 +30,16 @@ const NAV_LINKS = [
     href: "/cakes?category=Cheesecakes+%26+Specialty+Cakes",
   },
   {
-    label: "Pastries & Doughnuts",
-    href: "/cakes?category=Pastries%2C+Doughnuts+%26+Brownies",
+    label: "Puffs & Rolls",
+    href: "/cakes?category=Puffs%2C+Rolls+%26+Sandwiches",
+  },
+  {
+    label: "Tea Cakes & Breads",
+    href: "/cakes?category=Tea+Cakes%2C+Plum+Cakes+%26+Breads",
   },
   {
     label: "Biscuits & Snacks",
-    href: "/cakes?category=Bakery+Biscuits+%26+Cookies",
+    href: "/cakes?category=Mixtures+%26+Savoury+Namkeen",
   },
   { label: "About Us", href: "/about" },
 ];

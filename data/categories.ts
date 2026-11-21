@@ -5,6 +5,8 @@ export type ProductCategoryName =
   | "Birthday Cakes"
   | "Pastries, Doughnuts & Brownies"
   | "Cream Buns & Dilpasand"
+  | "Puffs, Rolls & Sandwiches"
+  | "Tea Cakes, Plum Cakes & Breads"
   | "Bakery Biscuits & Cookies"
   | "Rusks & Traditional Bakes"
   | "Mixtures & Savoury Namkeen"
@@ -63,6 +65,19 @@ export const CATEGORIES: CategoryInfo[] = [
     badge: "From ₹350 / ½ kg",
   },
   {
+    id: "cat-puffs-rolls-sandwiches",
+    name: "Puffs, Rolls & Sandwiches",
+    slug: "Puffs, Rolls & Sandwiches",
+    tagline: "Veg/Egg/Paneer Puffs, Egg & Paneer Rolls, Aloo Bun & Bread Sandwich",
+    description:
+      "Hot and flaky bakery Veg Puff, Egg Puff, Paneer Puff, Aloo Bun, Bread Sandwich, Egg Roll, and Paneer Roll.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Chai_and_Veg_Puff.jpg/960px-Chai_and_Veg_Puff.jpg",
+    showOnHomepage: true,
+    homepageOrder: 4,
+    badge: "₹25 – ₹40",
+  },
+  {
     id: "cat-pastries-doughnuts",
     name: "Pastries, Doughnuts & Brownies",
     slug: "Pastries, Doughnuts & Brownies",
@@ -72,8 +87,21 @@ export const CATEGORIES: CategoryInfo[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chocolate_lava_cake.jpg/960px-Chocolate_lava_cake.jpg",
     showOnHomepage: true,
-    homepageOrder: 4,
+    homepageOrder: 5,
     badge: "₹20 – ₹50",
+  },
+  {
+    id: "cat-teacakes-breads",
+    name: "Tea Cakes, Plum Cakes & Breads",
+    slug: "Tea Cakes, Plum Cakes & Breads",
+    tagline: "Ghee Cake, Carrot Dry Fruits, Fruit Plum Cake, Crush Cake, Milk & Wheat Bread",
+    description:
+      "Rich Ghee Cake, Carrot Dry Fruits Cake, Fruit Plum Cake, Crush Cake, and freshly baked Milk Bread, Wheat Bread, and Buns.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Fruit_cake%281%29.jpg/960px-Fruit_cake%281%29.jpg",
+    showOnHomepage: true,
+    homepageOrder: 6,
+    badge: "₹50 – ₹110",
   },
   {
     id: "cat-cream-buns-dilpasand",
@@ -85,7 +113,7 @@ export const CATEGORIES: CategoryInfo[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Bun-Maska.jpg/960px-Bun-Maska.jpg",
     showOnHomepage: true,
-    homepageOrder: 5,
+    homepageOrder: 7,
     badge: "Bengaluru Classics",
   },
   {
@@ -98,34 +126,33 @@ export const CATEGORIES: CategoryInfo[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG/960px-Cashew_Cookies_-_Oxford_Bookstore_-_Kolkata_2015-08-23_3612.JPG",
     showOnHomepage: true,
-    homepageOrder: 6,
+    homepageOrder: 8,
     badge: "₹110 / 250g",
-  },
-  {
-    id: "cat-rusks-traditional",
-    name: "Rusks & Traditional Bakes",
-    slug: "Rusks & Traditional Bakes",
-    tagline: "Milk & Stick Rusk, Baked Nippattu, Bombe Kaari, Shankarpalya & Chikki",
-    description:
-      "Special Milk Rusk, Stick Rusk, oil-free baked Nippattu, Bombe Kaari, Shankarpalya sweet, and Sesame/Peanut Chikki.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rusk_from_India.jpg/960px-Rusk_from_India.jpg",
-    showOnHomepage: true,
-    homepageOrder: 7,
-    badge: "₹80 – ₹100",
   },
   {
     id: "cat-mixtures-namkeen",
     name: "Mixtures & Savoury Namkeen",
     slug: "Mixtures & Savoury Namkeen",
-    tagline: "Sev, Garlic, Bombe, Boondi & Big Mixture, Round Nippattu & Moong Dal",
+    tagline: "Tomato/Garlic/Butter Murukku, Avarebele, Sev/Garlic/Bombe/Boondi Mixtures",
     description:
-      "Crunchy Karnataka mixtures and namkeen packs freshly prepared for evening snacking.",
+      "Crunchy Karnataka murukkus, Avarebele, mixtures, and namkeen packs freshly prepared for evening snacking.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Corn_Flakes_Mixture.JPG/960px-Corn_Flakes_Mixture.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chakli_%28Indian_snack%29.jpg/960px-Chakli_%28Indian_snack%29.jpg",
     showOnHomepage: true,
-    homepageOrder: 8,
+    homepageOrder: 9,
     badge: "₹60 – ₹90",
+  },
+  {
+    id: "cat-rusks-traditional",
+    name: "Rusks & Traditional Bakes",
+    slug: "Rusks & Traditional Bakes",
+    tagline: "Rose Cookies, Milk & Stick Rusk, Baked Nippattu, Bombe Kaari & Chikki",
+    description:
+      "Rose Cookies, Special Milk Rusk, Stick Rusk, oil-free baked Nippattu, Bombe Kaari, Shankarpalya sweet, and Sesame/Peanut Chikki.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rose_cookies_Achu_Murukku.JPG/960px-Rose_cookies_Achu_Murukku.JPG",
+    showOnHomepage: false,
+    badge: "₹60 – ₹100",
   },
   {
     id: "cat-chips-peanuts",
@@ -136,8 +163,7 @@ export const CATEGORIES: CategoryInfo[] = [
       "Crispy Potato Chips, Banana Chips, Tapioca Chips, Congress Peanuts, Chintamani Peanuts, and Roasted Chana.",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Congress_Kadlekai.jpg/960px-Congress_Kadlekai.jpg",
-    showOnHomepage: true,
-    homepageOrder: 9,
+    showOnHomepage: false,
     badge: "₹50 – ₹100",
   },
   {

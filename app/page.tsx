@@ -158,7 +158,7 @@ export default function HomePage() {
               href="/cakes"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-choco-900 hover:bg-choco-800 text-cream-50 text-xs sm:text-sm font-semibold transition-colors self-start sm:self-auto"
             >
-              <span>Explore All 75 Menu Items</span>
+              <span>Explore All 95 Menu Items</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

@@ -1743,6 +1743,442 @@ export const PRODUCTS: Product[] = [
     popularityScore: 86,
     tags: ["kabul chana", "chickpeas", "snacks"],
   },
+
+  // ============================================================================
+  // 10. PUFFS, ROLLS & SANDWICHES (7 Items: ₹25 – ₹40)
+  // ============================================================================
+  {
+    id: "veg-puff",
+    name: "Veg Puff",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Hot, flaky golden puff pastry stuffed with spiced mixed vegetable masala.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Chai_and_Veg_Puff.jpg/960px-Chai_and_Veg_Puff.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Chai_and_Veg_Puff.jpg/960px-Chai_and_Veg_Puff.jpg",
+    ],
+    price: 25,
+    sizes: makePieceSizes(25),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 98,
+    tags: ["veg puff", "veg pueff", "puff", "puffs", "snacks"],
+  },
+  {
+    id: "egg-puff",
+    name: "Egg Puff",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Crisp multi-layered bakery puff pastry filled with seasoned onion masala and boiled egg.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Egg_Puff1.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/Egg_Puff1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Egg_Puff2.jpg",
+    ],
+    price: 30,
+    sizes: makePieceSizes(30),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 97,
+    tags: ["egg puff", "egg pueff", "puff", "puffs", "snacks"],
+  },
+  {
+    id: "paneer-puff",
+    name: "Paneer Puff",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Golden flaky bakery puff filled with spiced paneer bhurji and herbs.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Curry_puffs_%281862141216%29.jpg/960px-Curry_puffs_%281862141216%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Curry_puffs_%281862141216%29.jpg/960px-Curry_puffs_%281862141216%29.jpg",
+    ],
+    price: 30,
+    sizes: makePieceSizes(30),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 93,
+    tags: ["paneer puff", "paneer pueff", "puff", "puffs", "snacks"],
+  },
+  {
+    id: "aloo-bun",
+    name: "Aloo Bun",
+    category: "Puffs, Rolls & Sandwiches",
+    secondaryCategories: ["Cream Buns & Dilpasand"],
+    description:
+      "Soft baked bakery bun stuffed with savoury spiced potato palya filling.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Baked_bun_with_better.jpg/960px-Baked_bun_with_better.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Baked_bun_with_better.jpg/960px-Baked_bun_with_better.jpg",
+    ],
+    price: 30,
+    sizes: makePieceSizes(30),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 91,
+    tags: ["aloo bun", "aalu ban", "bun", "snacks"],
+  },
+  {
+    id: "bread-sandwich",
+    name: "Bread Sandwich",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Fresh bakery bread sandwich layered with spiced vegetables and green chutney.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Masala_Bread_Sandwich.jpg/960px-Masala_Bread_Sandwich.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Masala_Bread_Sandwich.jpg/960px-Masala_Bread_Sandwich.jpg",
+    ],
+    price: 25,
+    sizes: makePieceSizes(25),
+    isBestseller: false,
+    isCustomerFavourite: false,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 89,
+    tags: ["bread sandwich", "sandwich", "snacks"],
+  },
+  {
+    id: "egg-roll",
+    name: "Egg Roll",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Warm, savoury bakery egg roll filled with seasoned egg and onions.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Egg_roll_%21.jpg/960px-Egg_roll_%21.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Egg_roll_%21.jpg/960px-Egg_roll_%21.jpg",
+    ],
+    price: 40,
+    sizes: makePieceSizes(40),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 92,
+    tags: ["egg roll", "roll", "snacks"],
+  },
+  {
+    id: "paneer-roll",
+    name: "Paneer Roll",
+    category: "Puffs, Rolls & Sandwiches",
+    description:
+      "Delicious bakery paneer roll stuffed with spiced paneer filling.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Paneer_kathi_roll_homemade.jpg/960px-Paneer_kathi_roll_homemade.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Paneer_kathi_roll_homemade.jpg/960px-Paneer_kathi_roll_homemade.jpg",
+    ],
+    price: 40,
+    sizes: makePieceSizes(40),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 93,
+    tags: ["paneer roll", "roll", "snacks"],
+  },
+
+  // ============================================================================
+  // 11. TEA CAKES, PLUM CAKES & BREADS (7 Items: ₹50 – ₹110)
+  // ============================================================================
+  {
+    id: "ghee-cake",
+    name: "Ghee Cake",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Rich, aromatic traditional bakery Ghee Cake baked to golden perfection.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Home_made_Mawa_Cake.jpg/960px-Home_made_Mawa_Cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Home_made_Mawa_Cake.jpg/960px-Home_made_Mawa_Cake.jpg",
+    ],
+    price: 110,
+    sizes: makeGramSizes(110, "250 g"),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 96,
+    tags: ["ghee cake", "gee cake", "tea cake", "sponge cake"],
+  },
+  {
+    id: "carrot-dry-fruits-cake",
+    name: "Carrot Dry Fruits Cake",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Wholesome carrot tea cake loaded with roasted cashews, almonds, and raisins.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Choco_Chip_Mawa_Cake.jpg/960px-Choco_Chip_Mawa_Cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Choco_Chip_Mawa_Cake.jpg/960px-Choco_Chip_Mawa_Cake.jpg",
+    ],
+    price: 110,
+    sizes: makeGramSizes(110, "250 g"),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 93,
+    tags: ["carrot dry fruits", "carrot cake", "tea cake"],
+  },
+  {
+    id: "fruit-plum-cake",
+    name: "Fruit Plum Cake",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Classic rich bakery Fruit Plum Cake packed with candied fruits, raisins, and warm spices.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Fruit_cake%281%29.jpg/960px-Fruit_cake%281%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Fruit_cake%281%29.jpg/960px-Fruit_cake%281%29.jpg",
+    ],
+    price: 100,
+    sizes: makeGramSizes(100, "250 g"),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 95,
+    tags: ["fruit plum cake", "plum cake", "fruit cake"],
+  },
+  {
+    id: "crush-cake",
+    name: "Crush Cake",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Soft bakery sponge layered with sweet fruit crush and cream.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sliced_fruit_on_a_cream_cake.jpg/960px-Sliced_fruit_on_a_cream_cake.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sliced_fruit_on_a_cream_cake.jpg/960px-Sliced_fruit_on_a_cream_cake.jpg",
+    ],
+    price: 100,
+    sizes: makePieceSizes(100, "1 Pack"),
+    isBestseller: false,
+    isCustomerFavourite: false,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 88,
+    tags: ["crush cake", "tea cake"],
+  },
+  {
+    id: "milk-bread",
+    name: "Milk Bread",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Freshly baked, pillowy-soft sliced bakery Milk Bread loaf.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sliced_sandwich_breads_2021-8-28.jpg/960px-Sliced_sandwich_breads_2021-8-28.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sliced_sandwich_breads_2021-8-28.jpg/960px-Sliced_sandwich_breads_2021-8-28.jpg",
+    ],
+    price: 50,
+    sizes: makePieceSizes(50, "1 Loaf"),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 92,
+    tags: ["milk bread", "bread", "loaf"],
+  },
+  {
+    id: "wheat-bread",
+    name: "Wheat Bread",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    description:
+      "Wholesome, freshly baked sliced whole Wheat Bread loaf.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Vegan_no-knead_whole_wheat_bread_loaf%2C_sliced%2C_September_2010.jpg/960px-Vegan_no-knead_whole_wheat_bread_loaf%2C_sliced%2C_September_2010.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Vegan_no-knead_whole_wheat_bread_loaf%2C_sliced%2C_September_2010.jpg/960px-Vegan_no-knead_whole_wheat_bread_loaf%2C_sliced%2C_September_2010.jpg",
+    ],
+    price: 60,
+    sizes: makePieceSizes(60, "1 Loaf"),
+    isBestseller: false,
+    isCustomerFavourite: false,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 90,
+    tags: ["wheat bread", "brown bread", "bread"],
+  },
+  {
+    id: "bakery-bun",
+    name: "Bun",
+    category: "Tea Cakes, Plum Cakes & Breads",
+    secondaryCategories: ["Cream Buns & Dilpasand"],
+    description:
+      "Freshly baked, soft golden bakery buns—ideal with tea, butter, or jam.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tray_of_Sweet_Buns.jpg/960px-Tray_of_Sweet_Buns.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tray_of_Sweet_Buns.jpg/960px-Tray_of_Sweet_Buns.jpg",
+    ],
+    price: 50,
+    sizes: makePieceSizes(50, "1 Pack"),
+    isBestseller: false,
+    isCustomerFavourite: false,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 89,
+    tags: ["bun", "sweet bun", "bread"],
+  },
+
+  // ============================================================================
+  // 12. MURUKKU, ROSE COOKIES & AVAREBELE (6 Items: ₹60 – ₹90)
+  // ============================================================================
+  {
+    id: "tomato-murukku",
+    name: "Tomato Murukku",
+    category: "Mixtures & Savoury Namkeen",
+    description:
+      "Crunchy spiral murukku seasoned with tangy tomato and mild chilli spices.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chakli_%28Indian_snack%29.jpg/960px-Chakli_%28Indian_snack%29.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chakli_%28Indian_snack%29.jpg/960px-Chakli_%28Indian_snack%29.jpg",
+    ],
+    price: 90,
+    sizes: makeGramSizes(90, "250 g"),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 94,
+    tags: ["tomato murkh", "tomato murukku", "murukku", "chakli"],
+  },
+  {
+    id: "garlic-murukku",
+    name: "Garlic Murukku",
+    category: "Mixtures & Savoury Namkeen",
+    description:
+      "Crisp, aromatic garlic-flavoured murukku freshly prepared in our kitchen.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Murukku_variety_02.jpg/960px-Murukku_variety_02.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Murukku_variety_02.jpg/960px-Murukku_variety_02.jpg",
+    ],
+    price: 80,
+    sizes: makeGramSizes(80, "250 g"),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 92,
+    tags: ["garlic murkh", "garlic murukku", "murukku", "chakli"],
+  },
+  {
+    id: "butter-white-murukku",
+    name: "Butter White Murukku",
+    category: "Mixtures & Savoury Namkeen",
+    description:
+      "Melt-in-the-mouth Karnataka Benne (Butter White) Murukku with sesame and cumin.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Benne_Mucchore.jpg/960px-Benne_Mucchore.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Benne_Mucchore.jpg/960px-Benne_Mucchore.jpg",
+    ],
+    price: 90,
+    sizes: makeGramSizes(90, "250 g"),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 95,
+    tags: ["butter white murkh", "butter white murukku", "benne murukku", "murukku"],
+  },
+  {
+    id: "butter-masala-murukku",
+    name: "Butter Masala Murukku",
+    category: "Mixtures & Savoury Namkeen",
+    description:
+      "Crispy butter murukku tossed in a savoury spice masala blend.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Chakli_in_a_bowl.jpg/960px-Chakli_in_a_bowl.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Chakli_in_a_bowl.jpg/960px-Chakli_in_a_bowl.jpg",
+    ],
+    price: 90,
+    sizes: makeGramSizes(90, "250 g"),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 93,
+    tags: ["butter masala murkh", "butter masala murukku", "murukku", "chakli"],
+  },
+  {
+    id: "rose-cookies",
+    name: "Rose Cookies",
+    category: "Rusks & Traditional Bakes",
+    secondaryCategories: ["Bakery Biscuits & Cookies"],
+    description:
+      "Traditional crispy flower-shaped Rose Cookies (Achappam) with a delicate sesame and coconut crunch.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rose_cookies_Achu_Murukku.JPG/960px-Rose_cookies_Achu_Murukku.JPG",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rose_cookies_Achu_Murukku.JPG/960px-Rose_cookies_Achu_Murukku.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Achappam_Rose_Cookie_Achu_Murukku_%282%29.jpg/960px-Achappam_Rose_Cookie_Achu_Murukku_%282%29.jpg",
+    ],
+    price: 60,
+    sizes: makePieceSizes(60, "1 Pack"),
+    isBestseller: false,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 91,
+    tags: ["rose cookies", "achappam", "cookies", "traditional sweets"],
+  },
+  {
+    id: "avarebele",
+    name: "Avarebele",
+    category: "Mixtures & Savoury Namkeen",
+    description:
+      "Bengaluru favourite crispy fried spiced Avarebele (hyacinth beans) tossed with curry leaves and chilli.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sprouts_fried.jpg/960px-Sprouts_fried.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sprouts_fried.jpg/960px-Sprouts_fried.jpg",
+    ],
+    price: 80,
+    sizes: makeGramSizes(80, "200 g"),
+    isBestseller: true,
+    isCustomerFavourite: true,
+    isAvailable: true,
+    allowEggSelection: false,
+    allowCustomMessage: false,
+    popularityScore: 94,
+    tags: ["avarebel", "avarebele", "avarekalu", "namkeen", "snacks"],
+  },
 ];
 
 export function getProductById(id: string): Product | undefined {
